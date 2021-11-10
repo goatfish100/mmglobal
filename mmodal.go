@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 // create function that takes int and slice and returns a slice
-func cumulativeAverages(inputSlice []float64, averageWindow int) []float64 {
+func CumulativeAverages(inputSlice []float64, averageWindow int) []float64 {
 	// slice to hold hold avg
 	avg := make([]float64, len(inputSlice))
 	runningSum := inputSlice[0]
@@ -32,7 +32,7 @@ func main() {
 	// create a slice with values
 	slice := []float64{0, 1, 2, 3}
 	slice2 := []float64{0, 1, -2, 3, -4, 5, -6, 7, -8, 9}
-	fmt.Println(cumulativeAverages(slice, 3))
-	fmt.Println(cumulativeAverages(slice2, 5))
+	fmt.Println(CumulativeAverages(slice, 3))
+	fmt.Println(CumulativeAverages(slice2, 5))
 
 }
