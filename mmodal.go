@@ -51,13 +51,13 @@ func main() {
 	// get integer window
 	intWindow, err := strconv.Atoi(slice3[0])
 	if err != nil {
-		log.Fatal(err)
+		log.Fatal("Error parsing input - please check \n", err)
 	}
 
 	for i := 1; i < len(slice3); i++ {
 		processSlice[i-1], err = strconv.ParseFloat(slice3[i], 64)
 		if err != nil {
-			log.Fatal(err)
+			log.Fatal("Error parsing input - please check \n", err)
 		}
 
 		//processSlice = append(processSlice, res)
