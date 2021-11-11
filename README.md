@@ -22,9 +22,10 @@ Solution was created in Golang and notes are for V 1.15+ (one added testing depe
 3.  #go run mmodal.go "(3, [0, 1, 2, 3])" -jl quotes are required around input
 4.  #go test -v ./
 - A description of your solution and any assumptions it makes
-jl- With requirements listed - I decided to create a solution that was a decent solution that could be implemented quickly and be fairly resilient. With that - problems could be run into problems with extremely large data input.  The program would probably max out with available system memory. For the integer window - a golang int was used and for the values - float64 was chosen.   The solution loops through the values - adding new value and possible subtracting the max value - before average is calculated.  Somekind of streaming solution would be one way to get around this limitation.  Golang - testing at moment is basic and ideally would utilize a harness that exercise larger data sets.
+- jl With requirements listed - I decided to create a solution that was a decent solution that could be implemented quickly and be fairly resilient. With that - problems could be run into problems with extremely large data input.  The program would probably max out with available system memory. For the integer window - a golang int was used and for the values - float64 was chosen. The solution loops through the values - adding new value and possible subtracting the max value - before average is calculated.  Somekind of streaming solution would be one way to get around this limitation.  Golang - testing at moment is basic and ideally would utilize a harness that exercise larger data sets.
 
 - Analysis of the time complexity of your solution, preferably in terms of big-O notation
+```
 ##########################################################
 JL NOtes
 Time complexity analysis
@@ -32,6 +33,7 @@ O(1).
 Space complexity analysis
 O(size).
 ##########################################################
+```
 ### SPECIFICATION
 A function that accepts inputs for an integer window size and an array of double-precision floating point
 values, and returns an array of double-precision floating point values. The nth value of the output array
