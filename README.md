@@ -2,6 +2,7 @@
 This exercises evaluates critical thinking and problem solving skills, specifically coding and algorithms.
 Use any tools or resources that you normally would for programming tasks.
 
+
 ## James L Note:
 I took the pdf and extracted text and put in this document to keep things together.  My notes/comments will be inline with initials starting the line -JL
 
